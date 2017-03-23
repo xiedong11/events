@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.zhuandian.eventbus.takephoto.TakePhotoActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView tv;
@@ -21,6 +23,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivityForResult(new Intent(MainActivity.this,Activity_2.class),1);
+            }
+        });
+
+
+        //take photo
+        ((Button) findViewById(R.id.takephoto)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,TakePhotoActivity.class));
             }
         });
     }
