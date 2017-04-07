@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.zhuandian.eventbus.takephoto.TakePhotoActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView tv;
